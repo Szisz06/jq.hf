@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - Mócza Szilvia</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Dogs</a></li>
+            <li><a href="admin.html">Admin</a></li>
+            <li>
+              <button class="btn btn-lg btn-dark mt-3 ml-4">Log out!</button>
+            </li>
+            <li class="logo">
+              <img src="logo.png" alt="LOGO" />
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div id="password-form">
+        <label for="password">Password:</label>
+        <div class="input-group">
+          <input type="password" id="password" />
+        </div>
+        <button id="submit-btn" class="btn btn-outline-secondary mt-3">
+          Submit
+        </button>
+      </div>
+      <article
+        id="main-admin-article"
+        style="background-color: white; border-radius: 20px; margin-top: 30px"
+      >
+        <h1 class="text-center">Add new dog:</h1>
+        <form id="dog-form">
+          <div class="form-group">
+            <label for="breed-input">Breed:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="breed-input"
+              placeholder="Enter breed"
+            />
+          </div>
+          <div class="form-group">
+            <label for="age-input">Age:</label>
+            <input
+              type="number"
+              class="form-control"
+              id="age-input"
+              placeholder="Enter age"
+            />
+          </div>
+          <div class="form-group">
+            <label for="price-input">Price:</label>
+            <input
+              type="number"
+              class="form-control"
+              id="price-input"
+              placeholder="Enter price"
+            />
+          </div>
+          <div class="form-group">
+            <label for="img1-input">Image URL 1:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="img1-input"
+              placeholder="Enter image URL 1"
+            />
+          </div>
+          <div class="form-group">
+            <label for="img2-input">Image URL 2:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="img2-input"
+              placeholder="Enter image URL 2"
+            />
+          </div>
+          <button
+            type="button"
+            class="btn btn-outline-dark btn-block"
+            id="add-dog-btn"
+          >
+            Add dog!
+          </button>
+        </form>
+        <h1 class="text-center mb-4">Dogs in the shop:</h1>
+        <div id="admin-article"></div>
+      </article>
+      <footer id="footer" style="max-height: 80px">
+        <p>
+          Terms of Use : Copyright © Mócza Szilvia. All rights reserved. All
+          images and code on this website are the property of Mócza Szilvia and
+          may not be used without permission. We apologize for any inconvenience
+          if the website is not functioning properly. Please note that no dogs
+          are currently for sale on this website.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>

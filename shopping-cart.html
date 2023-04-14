@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping - Mócza Szilvia</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Dogs</a></li>
+            <li><a href="admin.html">Admin</a></li>
+
+            <li class="logo">
+              <img src="logo.png" alt="LOGO" />
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <article id="shopping-article">
+        <div id="shopping-cart-container"></div>
+        <div class="container mt-5">
+          <h2 id="order-dogs-text" style="text-align: center">
+            Order dogs here:
+          </h2>
+          <form id="order-form">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="address">Address</label>
+              <input
+                type="text"
+                class="form-control"
+                id="address"
+                placeholder="Enter address"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-dark btn-block">Order</button>
+          </form>
+          <div id="thank-you-window" class="col text-center">
+            <div id="thank-you-message" class="h1"></div>
+            <button
+              id="buy-more-button"
+              class="btn btn-success btn-block btn-lg btn-default"
+            >
+              I BUY MORE DOGS
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <footer id="footer" style="max-height: 80px">
+        <p>
+          Terms of Use : Copyright © Mócza Szilvia. All rights reserved. All
+          images and code on this website are the property of Mócza Szilvia and
+          may not be used without permission. We apologize for any inconvenience
+          if the website is not functioning properly. Please note that no dogs
+          are currently for sale on this website.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
